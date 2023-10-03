@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f,d -name ".*" | cut -d. -f3
+find . -name ".*" | cut -d. -f3
