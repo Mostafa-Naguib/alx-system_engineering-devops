@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lRa | wc -l | ((command)) - 2
+find . -type d -not -path './' -and -not -path '..' | wc -l
