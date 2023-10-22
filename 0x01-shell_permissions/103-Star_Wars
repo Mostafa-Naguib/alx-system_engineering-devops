@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Install telnet if it is not already installed
+if ! command -v telnet &> /dev/null; then
+  sudo apt install telnet
+fi
+
+# Start the telnet session
+telnet towel.blinkenlights.nl
+
+# Wait for the user to press enter to start the movie
+read -p "Press enter to start the movie..."
+
+# Start the movie
+echo "o"
+
+# Wait for the movie to finish
+while true; do
+  sleep 1
+done
+
