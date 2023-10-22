@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name ".*" | cut -d. -f3
+find . -empty | tr "^.\/" " "
