@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty | tr "^.\/" " "
+find . -type d -empty -o -type f -size 0 -print0 2>/dev/null | xargs -0 -r printf '%s\n'
