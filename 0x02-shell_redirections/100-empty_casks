@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d -empty -o -type f -size 0 -print0 2>/dev/null | xargs -0 -r printf '%s\n'
+find . -empty \( -type f -o -type d \) -printf '%f\n'
